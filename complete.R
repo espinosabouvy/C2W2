@@ -1,4 +1,6 @@
 complete <- function(direc, id = 1:332){
+  
+    ##actualizando
      archivos <- list.files(direc,full.names = TRUE)
      for (i in id) {
           casos <- sum(complete.cases(read.csv(archivos[i])))
